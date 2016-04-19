@@ -6,7 +6,7 @@ angular.module('notebook.directives', ['NoteService'])
 .directive('noteList', function() {
 
 	return {
-		template: '<div>Times Clicked: {{numberClicked}}</div><my-note index="$index" note="::note" ng-repeat="note in notes"></my-note>',
+		template: '<div>Times Clicked: {{numberClicked}}</div><my-note index="$index" note="::singleNote" ng-repeat="singleNote in notes"></my-note>',
 		scope: {},
 		controller: function($scope, NoteFactory) {
 			$scope.numberClicked = 0;
