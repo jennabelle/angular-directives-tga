@@ -3,7 +3,7 @@ angular.module('notebook.directives')
 .directive('myNote', function() {
 
 	return {
-		template: '<div>Note {{index}} {{note.message}}</div>', // accessing index here
+		template: '<div>Note {{::index}} {{::note.message}}</div>', // accessing index here
 		scope: {
 			note: '=',
 			index: '=',
