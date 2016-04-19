@@ -1,1 +1,3 @@
-angular.module('notebook', []);
+angular.module('notebook', [
+	'notebook.directives'
+	]);
