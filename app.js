@@ -1,3 +1,1 @@
-angular.module('notebook', [
-'ui.router',
-]);
+angular.module('notebook', []);
